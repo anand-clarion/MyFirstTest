@@ -1,3 +1,4 @@
 class Profile < ActiveRecord::Base
-  # attr_accessible :title, :body
+	belongs_to :user
+  attr_accessible :address, :phone_number, :user_id
 end
