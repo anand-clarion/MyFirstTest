@@ -1,0 +1,14 @@
+<%= form_for @profile do |f| %>	
+<p>
+	<%= f.label :address %><br>
+	<%= f.text_field :address %>
+</p>
+		 
+<p>
+	<%= f.label :phone_number %><br>
+	<%= f.text_field :phone_number %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
