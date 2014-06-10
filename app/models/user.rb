@@ -6,9 +6,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :name
-  attr_accessor :name
-  validates :name, length: { maximum: 20, message: "*Please fill name within 20 cahracter" }, format: { with: /\A[a-zA-z]+\z/,
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :skype_id
+  validates :name, presence: true,length: { maximum: 20, message: "*Please fill name within 20 cahracter" }, format: { with: /\A[a-zA-z]+\z/,
     message: "Please only use character" }
+  validates :skype_id, presence: true
 
 end
