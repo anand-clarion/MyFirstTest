@@ -1,6 +1,5 @@
 class ProfilesController < ApplicationController
-
-	def new
+  def new
     @profile = Profile.new
   end
 
@@ -41,6 +40,5 @@ class ProfilesController < ApplicationController
 
   def welcome
   end
-
 end
 
